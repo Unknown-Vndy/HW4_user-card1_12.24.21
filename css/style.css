@@ -1,0 +1,113 @@
+:root {
+    --card-width: 300px;
+}
+
+body {
+    background: rgb(243, 244, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.user_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px auto;
+    min-width: 250px;
+    max-width: var(--card-width);
+    height: 600px;
+    background: white;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 5px grey;
+}
+
+.user_photo {
+    width: calc(0.5 * var(--card-width));
+    height: calc(0.5 * var(--card-width));
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.user_occupation {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.user_payment {
+    color: rgb(146, 149, 160);
+    font-size: 0.8em;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+.user_name {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+.geolocation {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: rgb(146, 149, 160);
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.user_description {
+    font-size: 0.6em;
+    color: rgb(146, 149, 160);
+    padding: 0 5px;
+    margin-bottom: 20px;
+    overflow: auto;
+    flex: 1 1 auto;
+}
+
+.button_1, .button_2 {
+    min-width: 200px;
+    max-width: 250px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.button_1 {
+    background: white;
+    color: rgb(126, 163, 233);
+    border: 1px solid rgb(126, 163, 233);
+}
+
+.button_2 {
+    color: white;
+    background: rgb(126, 163, 233);
+}
+
+.status {
+    color: rgb(146, 149, 160);
+    font-size: 0.7em;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.status_online {
+    color: rgb(167, 226, 79);
+}
+
+.status_offline {
+    color: grey;
+}

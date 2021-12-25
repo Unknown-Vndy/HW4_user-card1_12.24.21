@@ -23,7 +23,6 @@ body {
     margin: 50px auto;
     min-width: 250px;
     max-width: var(--card-width);
-    height: 600px;
     background: white;
     text-align: center;
     border-radius: 25px;
@@ -73,8 +72,15 @@ body {
     color: rgb(146, 149, 160);
     padding: 0 5px;
     margin-bottom: 20px;
-    overflow: auto;
-    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
 }
 
 .button_1, .button_2 {
@@ -91,6 +97,7 @@ body {
     background: white;
     color: rgb(126, 163, 233);
     border: 1px solid rgb(126, 163, 233);
+    margin-top: auto;
 }
 
 .button_2 {
